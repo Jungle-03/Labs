@@ -1,0 +1,85 @@
+create tablespace ts_xxx
+datafile 'D:\app\user\prost\ts_XXX'
+size 7 m 
+autoextend on next 5 m
+maxsize 20m
+extent management local;
+
+--2 zad
+
+create temporary tablespace ts_xxx_TEMP1
+tempfile 'D:\app\user\prost\ts_XXX_TEMP1'
+size 5 m 
+autoextend on next 3 m
+maxsize 30m
+extent management local;
+
+--3zad
+select TABLESPACE_NAME, STATUS, contents logging from SYS.DBA_TABLESPACES
+--4 zad
+ALTER SESSION SET "_ORACLE_SCRIPT" = TRUE;
+create role RL_XXXCORE;
+
+
+
+grant create session,
+create table, 
+create view,
+create procedure to RL_XXXCORE;
+--zad5
+select * from dba_sys_privs where grantee = 'RL_XXXCORE';
+select * from dba_roles; 
+
+
+
+
+--zad 6 
+
+create profile PF_XXXCORE limit
+password_life_time 180
+sessions_per_user 3
+failed_login_attempts 7
+password_lock_time 1  
+password_reuse_time 10
+password_grace_time default
+connect_time 180
+idle_time 30 --минут простоя
+
+--zad 7 
+select * from dba_profiles where profile = 'PF_XXXCORE';
+select * from dba_profiles where profile = 'DEFAULT';
+select * from dba_profiles
+
+--zad 8
+create user XXXCORE1 identified by 12345 
+default tablespace ts_xxx quota unlimited on ts_xxx
+temporary tablespace  ts_xxx_TEMP1
+profile PF_XXXCORE
+account unlock
+password expire
+
+ALTER SESSION SET "_ORACLE_SCRIPT" = TRUE;
+grant RL_XXXCORE to 
+
+
+
+
+delete users XXXCORE
+
+--11 zad
+create tablespace l4_QDATA
+datafile 'D:\app\user\prost\XXX_QDATA.dbf'
+size 10 m 
+autoextend on next 5 m
+maxsize 20m
+extent management local
+offline;
+
+select tablespace_name, status from sys.dba_tablespaces
+
+alter tablespace XXX_QDATA online
+
+select * from dba_profiles
+select * from dba_users
+alter user l4_user1 
+ quota 2m on 
