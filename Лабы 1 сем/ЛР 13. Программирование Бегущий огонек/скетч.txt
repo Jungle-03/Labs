@@ -1,0 +1,64 @@
+1. Для того чтобы светодиоды переключались раз в секунду, вам следует изменить задержку в функции `loop` на 1000 миллисекунд (1 секунда). Вот, как это можно сделать:
+
+```cpp
+void loop()
+{
+  unsigned int ms = millis();
+  int pin = FIRST_LED_PIN + (ms / 1000) % 10;
+  digitalWrite(pin, HIGH);
+  delay(1000);
+  digitalWrite(pin, LOW);
+}
+```
+
+2. Чтобы огонёк бежал только по средним четырем делениям шкалы, вы можете изменить цикл в функции `loop` следующим образом:
+
+```cpp
+void loop()
+{
+  unsigned int ms = millis();
+  int pin = FIRST_LED_PIN + (ms / 1000) % 4; // Бежим только по четырём светодиодам
+  digitalWrite(pin, HIGH);
+  delay(1000);
+  digitalWrite(pin, LOW);
+}
+```
+
+3. Для того чтобы управлять перемещением огонька с помощью цикла `for`, вы можете использовать следующий код:
+
+```cpp
+void loop()
+{
+  unsigned int ms = millis();
+  for (int pin = FIRST_LED_PIN; pin <= LAST_LED_PIN; ++pin) {
+    digitalWrite(pin, HIGH);
+    delay(1000);
+    digitalWrite(pin, LOW);
+  }
+}
+```
+
+4. Чтобы огонёк бегал в обратном направлении, вы можете изменить код следующим образом:
+
+```cpp
+void loop()
+{
+  unsigned int ms = millis();
+  int pin = FIRST_LED_PIN + (ms / 1000) % 4; // Бежим только по четырём светодиодам
+  digitalWrite(pin, HIGH);
+  delay(1000);
+  digitalWrite(pin, LOW);
+
+  // Для обратного направления меняем направление инкремента
+  int next_pin = pin + 1;
+  if (next_pin > FIRST_LED_PIN + 3) {
+    next_pin = FIRST_LED_PIN; // Вернуться к первому светодиоду
+  }
+
+  digitalWrite(next_pin, HIGH);
+  delay(1000);
+  digitalWrite(next_pin, LOW);
+}
+```
+
+Этот код будет переключать светодиоды в одном направлении, а затем в обратном, и так далее.
