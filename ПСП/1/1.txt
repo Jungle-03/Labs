@@ -1,0 +1,228 @@
+
+Активные подключения
+
+  Имя    Локальный адрес        Внешний адрес          Состояние
+  TCP    0.0.0.0:135            DESKTOP-3B74NCL:0      LISTENING
+  RpcSs
+ [svchost.exe]
+  TCP    0.0.0.0:445            DESKTOP-3B74NCL:0      LISTENING
+ Не удается получить сведения о владельце
+  TCP    0.0.0.0:623            DESKTOP-3B74NCL:0      LISTENING
+ [LMS.exe]
+  TCP    0.0.0.0:1521           DESKTOP-3B74NCL:0      LISTENING
+ [TNSLSNR.exe]
+  TCP    0.0.0.0:5040           DESKTOP-3B74NCL:0      LISTENING
+  CDPSvc
+ [svchost.exe]
+  TCP    0.0.0.0:5357           DESKTOP-3B74NCL:0      LISTENING
+ Не удается получить сведения о владельце
+  TCP    0.0.0.0:7680           DESKTOP-3B74NCL:0      LISTENING
+ Не удается получить сведения о владельце
+  TCP    0.0.0.0:16992          DESKTOP-3B74NCL:0      LISTENING
+ [LMS.exe]
+  TCP    0.0.0.0:49664          DESKTOP-3B74NCL:0      LISTENING
+ [lsass.exe]
+  TCP    0.0.0.0:49665          DESKTOP-3B74NCL:0      LISTENING
+ Не удается получить сведения о владельце
+  TCP    0.0.0.0:49666          DESKTOP-3B74NCL:0      LISTENING
+  EventLog
+ [svchost.exe]
+  TCP    0.0.0.0:49667          DESKTOP-3B74NCL:0      LISTENING
+  Schedule
+ [svchost.exe]
+  TCP    0.0.0.0:49668          DESKTOP-3B74NCL:0      LISTENING
+ [spoolsv.exe]
+  TCP    0.0.0.0:49672          DESKTOP-3B74NCL:0      LISTENING
+ Не удается получить сведения о владельце
+  TCP    0.0.0.0:49749          DESKTOP-3B74NCL:0      LISTENING
+ [ORACLE.EXE]
+  TCP    127.0.0.1:6463         DESKTOP-3B74NCL:0      LISTENING
+ [Discord.exe]
+  TCP    127.0.0.1:44950        DESKTOP-3B74NCL:0      LISTENING
+ [figma_agent.exe]
+  TCP    127.0.0.1:44960        DESKTOP-3B74NCL:0      LISTENING
+ [figma_agent.exe]
+  TCP    127.0.0.1:49670        DESKTOP-3B74NCL:49671  ESTABLISHED
+ [LMS.exe]
+  TCP    127.0.0.1:49671        DESKTOP-3B74NCL:49670  ESTABLISHED
+ [LMS.exe]
+  TCP    172.20.10.5:139        DESKTOP-3B74NCL:0      LISTENING
+ Не удается получить сведения о владельце
+  TCP    172.20.10.5:63275      149.154.167.41:https   ESTABLISHED
+ [Telegram.exe]
+  TCP    172.20.10.5:63288      162.159.135.234:https  ESTABLISHED
+ [Discord.exe]
+  TCP    172.20.10.5:63289      ec2-52-70-125-53:https  ESTABLISHED
+ [chrome.exe]
+  TCP    172.20.10.5:63292      ec2-52-207-122-56:https  ESTABLISHED
+ [chrome.exe]
+  TCP    172.20.10.5:63294      20.199.120.85:https    ESTABLISHED
+  WpnService
+ [svchost.exe]
+  TCP    172.20.10.5:63296      45:https               ESTABLISHED
+ [Discord.exe]
+  TCP    172.20.10.5:63300      ws-in-f188:5228        ESTABLISHED
+ [chrome.exe]
+  TCP    172.20.10.5:63361      a2-18-29-186:https     CLOSE_WAIT
+ [SearchApp.exe]
+  TCP    172.20.10.5:63364      a2-18-29-208:https     CLOSE_WAIT
+ [SearchApp.exe]
+  TCP    172.20.10.5:63368      a2-18-29-208:https     CLOSE_WAIT
+ [SearchApp.exe]
+  TCP    172.20.10.5:63374      13.107.213.254:https   CLOSE_WAIT
+ [SearchApp.exe]
+  TCP    172.20.10.5:63386      24:https               ESTABLISHED
+ [Discord.exe]
+  TCP    172.20.10.5:63387      188.114.99.235:https   ESTABLISHED
+ [chrome.exe]
+  TCP    172.20.10.5:63390      149.154.167.223:https  TIME_WAIT
+  TCP    172.20.10.5:63391      149.154.167.223:http   TIME_WAIT
+  TCP    172.20.10.5:63392      52.113.194.132:https   ESTABLISHED
+ Не удается получить сведения о владельце
+  TCP    172.20.10.5:63393      fra15s28-in-f14:https  ESTABLISHED
+ [chrome.exe]
+  TCP    192.168.0.153:2030     DESKTOP-3B74NCL:0      LISTENING
+ [omtsreco.exe]
+  TCP    [::]:135               DESKTOP-3B74NCL:0      LISTENING
+  RpcSs
+ [svchost.exe]
+  TCP    [::]:445               DESKTOP-3B74NCL:0      LISTENING
+ Не удается получить сведения о владельце
+  TCP    [::]:623               DESKTOP-3B74NCL:0      LISTENING
+ [LMS.exe]
+  TCP    [::]:1521              DESKTOP-3B74NCL:0      LISTENING
+ [TNSLSNR.exe]
+  TCP    [::]:5357              DESKTOP-3B74NCL:0      LISTENING
+ Не удается получить сведения о владельце
+  TCP    [::]:7680              DESKTOP-3B74NCL:0      LISTENING
+ Не удается получить сведения о владельце
+  TCP    [::]:16992             DESKTOP-3B74NCL:0      LISTENING
+ [LMS.exe]
+  TCP    [::]:49664             DESKTOP-3B74NCL:0      LISTENING
+ [lsass.exe]
+  TCP    [::]:49665             DESKTOP-3B74NCL:0      LISTENING
+ Не удается получить сведения о владельце
+  TCP    [::]:49666             DESKTOP-3B74NCL:0      LISTENING
+  EventLog
+ [svchost.exe]
+  TCP    [::]:49667             DESKTOP-3B74NCL:0      LISTENING
+  Schedule
+ [svchost.exe]
+  TCP    [::]:49668             DESKTOP-3B74NCL:0      LISTENING
+ [spoolsv.exe]
+  TCP    [::]:49672             DESKTOP-3B74NCL:0      LISTENING
+ Не удается получить сведения о владельце
+  TCP    [::]:49749             DESKTOP-3B74NCL:0      LISTENING
+ [ORACLE.EXE]
+  TCP    [::1]:1521             DESKTOP-3B74NCL:58035  ESTABLISHED
+ [TNSLSNR.exe]
+  TCP    [::1]:49669            DESKTOP-3B74NCL:0      LISTENING
+ [jhi_service.exe]
+  TCP    [::1]:49675            DESKTOP-3B74NCL:0      LISTENING
+ [TNSLSNR.exe]
+  TCP    [::1]:58035            DESKTOP-3B74NCL:1521   ESTABLISHED
+ [ORACLE.EXE]
+  TCP    [fe80::ab8c:7acf:af0a:142d%12]:2030  DESKTOP-3B74NCL:0      LISTENING
+ [omtsreco.exe]
+  UDP    0.0.0.0:3702           *:*                    
+ [dashost.exe]
+  UDP    0.0.0.0:3702           *:*                    
+  FDResPub
+ [svchost.exe]
+  UDP    0.0.0.0:3702           *:*                    
+ [dashost.exe]
+  UDP    0.0.0.0:3702           *:*                    
+  FDResPub
+ [svchost.exe]
+  UDP    0.0.0.0:5050           *:*                    
+  CDPSvc
+ [svchost.exe]
+  UDP    0.0.0.0:5353           *:*                    
+ [chrome.exe]
+  UDP    0.0.0.0:5353           *:*                    
+ [chrome.exe]
+  UDP    0.0.0.0:5353           *:*                    
+ [chrome.exe]
+  UDP    0.0.0.0:5353           *:*                    
+ [chrome.exe]
+  UDP    0.0.0.0:5353           *:*                    
+  Dnscache
+ [svchost.exe]
+  UDP    0.0.0.0:5355           *:*                    
+  Dnscache
+ [svchost.exe]
+  UDP    0.0.0.0:53140          *:*                    
+ [chrome.exe]
+  UDP    0.0.0.0:53431          *:*                    
+ [dashost.exe]
+  UDP    0.0.0.0:58432          *:*                    
+  FDResPub
+ [svchost.exe]
+  UDP    0.0.0.0:60568          *:*                    
+ [chrome.exe]
+  UDP    127.0.0.1:1900         *:*                    
+  SSDPSRV
+ [svchost.exe]
+  UDP    127.0.0.1:49333        *:*                    
+  SSDPSRV
+ [svchost.exe]
+  UDP    127.0.0.1:49664        *:*                    
+  iphlpsvc
+ [svchost.exe]
+  UDP    127.0.0.1:65532        *:*                    
+ [WINWORD.EXE]
+  UDP    172.20.10.5:137        *:*                    
+ Не удается получить сведения о владельце
+  UDP    172.20.10.5:138        *:*                    
+ Не удается получить сведения о владельце
+  UDP    172.20.10.5:1900       *:*                    
+  SSDPSRV
+ [svchost.exe]
+  UDP    172.20.10.5:2177       *:*                    
+  QWAVE
+ [svchost.exe]
+  UDP    172.20.10.5:49332      *:*                    
+  SSDPSRV
+ [svchost.exe]
+  UDP    [::]:3702              *:*                    
+  FDResPub
+ [svchost.exe]
+  UDP    [::]:3702              *:*                    
+  FDResPub
+ [svchost.exe]
+  UDP    [::]:3702              *:*                    
+ [dashost.exe]
+  UDP    [::]:3702              *:*                    
+ [dashost.exe]
+  UDP    [::]:5353              *:*                    
+  Dnscache
+ [svchost.exe]
+  UDP    [::]:5353              *:*                    
+ [chrome.exe]
+  UDP    [::]:5353              *:*                    
+ [chrome.exe]
+  UDP    [::]:5355              *:*                    
+  Dnscache
+ [svchost.exe]
+  UDP    [::]:53432             *:*                    
+ [dashost.exe]
+  UDP    [::]:58433             *:*                    
+  FDResPub
+ [svchost.exe]
+  UDP    [::1]:1900             *:*                    
+  SSDPSRV
+ [svchost.exe]
+  UDP    [::1]:49331            *:*                    
+  SSDPSRV
+ [svchost.exe]
+  UDP    [::1]:57372            *:*                    
+ [ORACLE.EXE]
+  UDP    [fe80::ab8c:7acf:af0a:142d%12]:1900  *:*                    
+  SSDPSRV
+ [svchost.exe]
+  UDP    [fe80::ab8c:7acf:af0a:142d%12]:2177  *:*                    
+  QWAVE
+ [svchost.exe]
+  UDP    [fe80::ab8c:7acf:af0a:142d%12]:49330  *:*                    
+  SSDPSRV
+ [svchost.exe]
