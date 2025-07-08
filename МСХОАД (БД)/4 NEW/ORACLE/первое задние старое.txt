@@ -1,0 +1,45 @@
+WITH monthly_totals AS (
+SELECT
+TO_CHAR(OrderDate, 'YYYY-MM') AS month,
+COUNT(OrderID) AS total_orders,
+SUM(TotalCost) AS total_revenue,
+EXTRACT(YEAR FROM OrderDate) AS order_year,
+TO_CHAR(OrderDate, 'Q') AS order_quarter,
+CASE
+WHEN EXTRACT(MONTH FROM OrderDate) <= 6 THEN 'H1'
+ELSE 'H2'
+END AS order_half_year
+FROM Orders
+GROUP BY
+TO_CHAR(OrderDate, 'YYYY-MM'),
+EXTRACT(YEAR FROM OrderDate),
+TO_CHAR(OrderDate, 'Q'),
+CASE
+WHEN EXTRACT(MONTH FROM OrderDate) <= 6 THEN 'H1'
+ELSE 'H2'
+END
+)
+SELECT
+month,
+total_orders,
+total_revenue,
+SUM(total_revenue) OVER (PARTITION BY order_year) AS total_yearly,
+SUM(total_revenue) OVER (PARTITION BY order_year, order_quarter) AS total_quarterly,
+SUM(total_revenue) OVER (PARTITION BY order_year, order_half_year) AS total_half_yearly
+FROM monthly_totals
+ORDER BY month;
+
+я получил результат как на скриншоте
+
+таблица Orders состоит из
+
+ORDERID NOT NULL NUMBER(38)
+CUSTOMERID NUMBER(38)
+VEHICLEID NUMBER(38)
+DRIVERIDINT NUMBER(38)
+ORDERDATE DATE
+STATUS VARCHAR2(255)
+ROUTE VARCHAR2(255)
+DELIVERYADDRESS VARCHAR2(255)
+TOTALCOST NUMBER(10,2)
+USERID NUMBER(38)
